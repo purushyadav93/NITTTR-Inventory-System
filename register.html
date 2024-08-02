@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="style1.css">
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js" defer></script>
+    <script src="validation.js" defer></script>
+</head>
+<body>
+     <header>
+        <h2 class="logo"><br><img src="new.png" height="160" width="600"></h2>
+        <nav class="navigation">
+            <a href="about.html">About</a>
+            <a href="contactus.html">Contact</a>
+            <button id="myButton" class="btnLogin-popup">Login</button>
+
+        </nav>
+     </header>
+
+     <div class="wrapper">
+       
+        <div class="form-box login">
+            <h2>Registration</h2>
+            <form action="process-register.php" method="post" id="register" novalidate>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="person-circle"></ion-icon></span>
+                    <input type="text" id="username" name="username">
+                    <label for="username">Username</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" id="email" name="email">
+                    <label for="email">Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" id="password" name="password">
+                    <label for="password">Password</label>
+                </div><br>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" id="confirm_password" name="confirm_password">
+                    <label for="confirm_password">Confirm Password</label>
+                </div>
+                <button type="submit" class="btn">Register</button>
+                <div class="login-register"><p>Already have an account? <a href="index.php" class="register-link">Login</a></p></div>
+
+                </form>
+            </div>
+     </div>
+     <script type="text/javascript">
+        document.getElementById("myButton").onclick = function () {
+            location.href = "index.php";
+        };
+     </script>
+</body>
+</html>

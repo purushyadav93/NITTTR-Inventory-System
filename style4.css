@@ -1,0 +1,163 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: (#EEEEEE, #151B54);
+    color: #fff;
+}
+
+.contact-container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    color: #fff;
+}
+
+h1 {
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.contact-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contact-info, .map {
+    flex: 1 1 45%;
+    margin: 20px 0;
+}
+
+.contact-info h2, .map h2 {
+    margin-bottom: 15px;
+    color: #00e676;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.contact-info p {
+    margin: 10px 0;
+    color: #fff;
+}
+
+.contact-info a {
+    color: #00e676;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.map iframe {
+    width: 100%;
+    height: 450px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+footer{
+    background-color: #151B54;
+    color: #EEEEEE;
+
+}
+.footercontainer{
+    width: 100%;
+    padding: 70px 30px 20px;
+}
+.socialIcons{
+    display: flex;
+    justify-content: center;
+}
+.socialIcons a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+.socialIcons a{
+font-size: 2em;
+color: black;
+opacity: 0.9s;
+}
+.socialIcons a:hover i{
+    color: white;
+    transition: 0.5s;
+
+}
+header {
+    position: fixed;
+    top: -1%;
+    left: 0%;
+    height: 18%;
+    width: 100%;
+    padding: 0px 50px;
+    background: #EEEEEE;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+.logo {
+    font-size: 2em;
+    color: #fff;
+    user-select: none;
+}
+
+.navigation a {
+    position: relative;
+    font-size: 1.2em;
+    color: #151B54;
+    text-decoration: none;
+    font-weight: 550;
+    margin-left: 40px;
+}
+
+.navigation a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #151B54;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.navigation a:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.navigation .btnLogin-popup {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #151B54;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color:#151B54;
+    font-weight: 550;
+    margin-left: 40px;
+    transition: .5s;
+    position: relative;
+    left: -100px;
+}
+
+.navigation .btnLogin-popup:hover {
+    background: #728FCE;
+    color: #162938;
+}
